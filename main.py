@@ -1,5 +1,11 @@
 import tkinter as display
+import datetime
 import time
+import calendar
+
+print(calendar.calendar(2022))
+
+
 
 window = display.Tk()
 
@@ -16,6 +22,9 @@ digital_clock_lbl = display.Label(window, text="",
 digital_clock_lbl.pack()
 
 clock()
+
+x = str(datetime.datetime.now())
+print(x)
 
 window.mainloop()
 
